@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="player.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/6a8915fabb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="controls">
+            <div id="player">
+                <img src="logos/live.png" sound="sonidos/hannah.mp3" alt="" id="live_img">
+                <i class="fas fa-play-circle fa-7x" id="play" onclick="play()"></i>
+                <i class="fas fa-pause-circle fa-7x" id="pause" onclick="pause()"></i>
+              </div>
+        
+              
+              <div id="volumeCONTROL">
+                <input type="range" id="volume" max="1" min="0" step="0.01" oninput="changevolume(this.value)" />
+                <i id="volumeUP" class="fas fa-volume-up" onclick="mute()"></i>
+                <i id="volumeDOWN" class="fas fa-volume-down" onclick="mute()"></i>
+                <i id="volumeMUTE" class="fas fa-volume-mute" onclick="volumeup()"></i>
+              </div>
+        </div>
+    
+        <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+        <div id="twitch"></div>
+        <script src="js/twitchPlayer.js"></script>
+    </div>
+
+    <audio id="audio_recalculando" controls loop src="mp3/royalmix2.mp3" ></audio>
+    
+</body>
+</html>

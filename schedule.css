@@ -1,0 +1,89 @@
+#parrilla{
+    padding: 0;
+    overflow:auto;
+}
+
+.programa{
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    transition: all 1200ms ease;
+    overflow: auto;
+    position: relative;
+}
+
+.programa::-webkit-scrollbar {
+    display: none;
+  }
+
+.titulo-programa, .autor-programa, .abstract-programa, .hora-programa{
+    padding: 0;
+    margin: 0%;
+}
+
+.programa-header, .autor-programa, .abstract-programa{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.programa-header{
+    padding: 0;
+    display: inline-flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.hora-programa{
+    padding: 0;
+    width: fit;
+}
+
+.titulo-programa{
+    padding-left: 15px;
+    width: 60%;
+}
+
+.programa-body{
+    width: 100%;
+}
+
+.autor-programa{
+    margin-top: 250px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.abstract-programa{
+    width: fit-content;
+    max-width: 80%;
+    margin: 30px 0;
+}
+
+.schedule-img{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
