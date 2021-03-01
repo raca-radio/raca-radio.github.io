@@ -9,8 +9,11 @@
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/6a8915fabb.js" crossorigin="anonymous"></script>
-  <script src="js/radioPlayer.js"></script>
+  <script src="https://kit.fontawesome.com/6a8915fabb.js" crossorigin="anonymous"></script>  
+  <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+
+  
+  <script src="js/infoTime.js"></script>
 
 
 </head>
@@ -88,7 +91,8 @@
 
     <div class="about">
       <div class="about-info">
-        <div id="about-info-expand">
+        <div id="about-info-expand"> 
+          <br>
           <p>>> ABOUT</p> 
           <br>
           <br>
@@ -113,7 +117,7 @@
       <div class="about-logo">
         
         <img class="maca" src="logos/macaBlanco.png" alt="logo maca" sound="#">
-        <img class="noise" src="logos/auralBlanco.png" alt="logo nightnoise" sound="#">
+        <img class="noise" src="logos/noiseNegro.png" alt="logo nightnoise" sound="#">
         <img class="aural" src="logos/auralBlanco.png" alt="logo purplenoise" sound="#">
 
         <!--
@@ -130,7 +134,24 @@
 
 
     <div class="live" >
+
+      <div class="live-video">
+        <div id="twitch">
+        </div>
+      </div>
       
+      
+
+      <div class="live-controls">
+
+        <i class="fas fa-play-circle fa-2x" id="play" onclick="play()"></i>
+        <i class="fas fa-pause-circle fa-2x" id="pause" onclick="pause()"></i>
+        <input type="range" id="volume" max="1" min="0" step="0.01" oninput="changevolume(this.value)" />
+        <i id="volumeUP" class="fas fa-volume-up" onclick="mute()"></i>
+        <i id="volumeDOWN" class="fas fa-volume-down" onclick="mute()"></i>
+        <i id="volumeMUTE" class="fas fa-volume-mute" onclick="volumeup()"></i>
+
+      </div>
 
       <!--
 
@@ -149,7 +170,8 @@
 
 
     <div class="info">
-      
+      <div class="info-time" inicio="21:39" fin="21:40"><p>Hola</p></div>
+      <div class="info-time" inicio="21:40" fin="21:41"><p>Hola2</p></div>
 
       <!--
 
@@ -174,8 +196,8 @@
       -->
 </body>
 
-
 <script src="js/expandAbout.js"></script>
+<script src="js/twitchPlayer.js"></script>
 
 
 </html>

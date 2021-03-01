@@ -4,10 +4,10 @@ var volume = 0.5;
 
 var options = {
   width: "100%",
-  height: "400px",
-  channel: "aural_podcast",
+  height: "100%",
+  channel: "Sacriel",
   autoplay: true,
-  parent: ["aural.eiei.page"],
+  parent: ["aural-podcast.github.io"],
   controls: false,
   muted: true,
 };
@@ -24,12 +24,12 @@ function play() {
     if (play_pause == "play"){
       audio.play();
       document.getElementById("play").style.display = "none";
-      document.getElementById("pause").style.display = "block";
+      document.getElementById("pause").style.display = "inline";
       console.log(play_pause)
     } else {
       audio.volume = volume;
       document.getElementById("play").style.display = "none";
-      document.getElementById("pause").style.display = "block";
+      document.getElementById("pause").style.display = "inline";
       play_pause = "play";
       console.log(play_pause)
     }
@@ -38,7 +38,7 @@ function play() {
     player.setMuted(false);
     player.setVolume(parseFloat(volume));
     document.getElementById("play").style.display = "none";
-    document.getElementById("pause").style.display = "block";
+    document.getElementById("pause").style.display = "inline";
     play_pause = "play"; 
   }
 }
@@ -49,7 +49,7 @@ function pause() {
 
     var audio = document.getElementById("audio_recalculando");
     //audio.pause();
-    document.getElementById("play").style.display = "block";
+    document.getElementById("play").style.display = "inline";
     document.getElementById("pause").style.display = "none";
     play_pause = "pause";
     audio.volume = 0;
@@ -58,7 +58,7 @@ function pause() {
   } else {
 
     player.setMuted(true);
-    document.getElementById("play").style.display = "block";
+    document.getElementById("play").style.display = "inline";
     document.getElementById("pause").style.display = "none";
     play_pause = "pause";
       console.log(play_pause)

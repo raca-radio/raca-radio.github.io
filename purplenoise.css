@@ -29,8 +29,10 @@ body{
     position: relative;
 }
 
-.title, .schedule, .about-logo, #about-info-expand, .live, .info, .artist, .chat {
+.title, .schedule, .about-logo, .info, .artist {
   padding: 20px;
+  scrollbar-color: #888 #000000;
+  scrollbar-width: 10px;
 }
 
 
@@ -65,7 +67,7 @@ h2{
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 3fr;
+  grid-template-rows: 1fr 3fr;
   grid-template-areas:
     "about-info"
     "about-logo"
@@ -90,6 +92,8 @@ h2{
   z-index: 3;
   overflow-y: hidden;
   border-top: 5px double rgb(255, 255, 255);
+  border-color: #888;
+  padding: 0 20px ;
 }
 
 .about-logo{
@@ -120,7 +124,71 @@ h2{
 
 .live{
   grid-area: live;
-  background-color: darkgreen;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 0.5fr;
+  grid-template-areas:
+    "live-video"
+    "live-controls"
+    ;
+  position: relative;
+}
+
+.live-video{
+  grid-area: live-video;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#twitch{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.live-controls{
+  grid-area: live-controls;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 20%;
+}
+
+#play{
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+#pause{
+  display: none;
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+#volumeUP{
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volumeDOWN{
+  display: none;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volumeMUTE{
+  display: none;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volume{
+  width: 60%;
+  cursor: pointer; 
+
 }
 
 
@@ -133,6 +201,7 @@ h2{
 #chat_embed{
   height: 100%;
   width: 100%;
+  border: none;
 }
 
 
@@ -141,6 +210,10 @@ h2{
 .info{
   grid-area: info;
   background-color: darkorange;
+}
+
+.info-time{
+  display: none;
 }
 
 
@@ -164,7 +237,7 @@ h2{
     width: 10px;
   }
   
-  /* scroll neutral */
+  /* scroll fondo */
   ::-webkit-scrollbar-track {
     background: #000000; 
   }
@@ -199,6 +272,10 @@ h2{
 
     .chat{
       height: 500px;
+    }
+
+    .live{
+      height: 400px;
     }
 
 
