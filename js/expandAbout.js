@@ -4,8 +4,6 @@ $(document).ready(function() {
 
         var open;
         open = 0;
-        
-        console.log(open)
             
         
         $(".about").click(function () {
@@ -14,13 +12,11 @@ $(document).ready(function() {
                     height: "400px"
                 });
                 open = 1;
-                console.log(open)
             } else {
                 $("#about-info-expand").stop(true, false).animate({
                     height: "100%"
                 });
                 open = 0;
-                console.log(open)
              }
         });
 
@@ -28,8 +24,7 @@ $(document).ready(function() {
             $("#about-info-expand").stop(true, false).animate({
                 height: "100%"
             }); 
-            open = 0;
-            console.log(open)      
+            open = 0;    
         });
         
             
