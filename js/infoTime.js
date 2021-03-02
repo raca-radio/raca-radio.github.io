@@ -1,15 +1,13 @@
 $(document).ready(function() {
-    
-    setInterval(function(){ 
 
-        var current = new Date();
+    var current = new Date();
         var hour = current.getHours();
-        if (hour.length<2){
-            hour = "0" + hour;
+        if (hour.toString().length<2){
+            hour = "0" + hour.toString();
         }
         var minute = current.getMinutes();
-        if (minute.length<2){
-            minute = "0" + minute;
+        if (minute.toString().length<2){
+            minute = "0" + minute.toString();
         }
         var time = hour + ":" + minute;
         console.log(time);
@@ -25,7 +23,40 @@ $(document).ready(function() {
                 
             } else {
                 if (inicio_time<=time){
-                    element_time[i].style.display = "inline";
+                    element_time[i].style.display = "inline-flex";
+                } else {
+                    element_time[i].style.display = "none";
+                }
+            }
+        
+        }
+    
+    setInterval(function(){ 
+
+        var current = new Date();
+        var hour = current.getHours();
+        if (hour.toString().length<2){
+            hour = "0" + hour.toString();
+        }
+        var minute = current.getMinutes();
+        if (minute.toString().length<2){
+            minute = "0" + minute.toString();
+        }
+        var time = hour + ":" + minute;
+        console.log(time);
+
+        var element_time = $( ".info-time" );
+        for(var i = 0; i < element_time.length; i++)
+        {
+            var inicio_time = element_time[i].getAttribute("inicio");
+            var fin_time = element_time[i].getAttribute("fin");
+
+            if (fin_time<=time) {
+                element_time[i].style.display = "none";
+                
+            } else {
+                if (inicio_time<=time){
+                    element_time[i].style.display = "inline-flex";
                 } else {
                     element_time[i].style.display = "none";
                 }
@@ -34,7 +65,7 @@ $(document).ready(function() {
         }
         
     
-    }, 5000);
+    }, 60000);
 
 });
 

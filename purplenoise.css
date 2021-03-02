@@ -21,7 +21,7 @@ body{
   grid-template-areas:
     "title live chat artist"
     "schedule live chat artist"
-    "about info info artist"
+    "about info chat artist"
     ;
 
     margin:0;
@@ -29,7 +29,7 @@ body{
     position: relative;
 }
 
-.title, .schedule, .about-logo, .info, .artist {
+.title, .schedule, .about-logo, .info-imagen, .info-texto {
   padding: 20px;
   scrollbar-color: #888 #000000;
   scrollbar-width: 10px;
@@ -48,7 +48,7 @@ body{
 }
 
 h2{
-  font-size: x-large;
+  font-size: large;
 }
 
 
@@ -57,6 +57,7 @@ h2{
 .schedule{
   grid-area: schedule;
   overflow-y: scroll;
+  font-size: small;
 }
 
 
@@ -126,10 +127,9 @@ h2{
   grid-area: live;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr 0.5fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "live-video"
-    "live-controls"
     ;
   position: relative;
 }
@@ -143,7 +143,7 @@ h2{
 }
 
 #twitch{
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: relative;
 }
@@ -154,6 +154,7 @@ h2{
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding-top: 5%;
   padding-bottom: 20%;
 }
 
@@ -209,11 +210,28 @@ h2{
 
 .info{
   grid-area: info;
-  background-color: darkorange;
 }
 
 .info-time{
+  width: 100%;
   display: none;
+  height: 150px;
+  align-items: center;
+}
+
+.info-imagen{
+  height: 100%;
+  width: auto;
+}
+
+.info-texto{
+  height: 100%;
+  font-size: small;
+}
+
+.info-texto-descripcion{
+  height: 50%;
+  overflow-y: scroll;
 }
 
 
@@ -221,7 +239,12 @@ h2{
 
 .artist{
   grid-area: artist;
-  background-color: darkviolet;
+}
+
+#parrilla{
+  width: 100%; 
+  height: 100%;
+  border-width: 0;
 }
 
 

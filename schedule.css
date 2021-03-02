@@ -1,6 +1,11 @@
+body{
+  height: 100%;
+}
+
 #parrilla{
     padding: 0;
     overflow:auto;
+    height: 100%;
 }
 
 .programa{
@@ -28,14 +33,15 @@
 .programa-header{
     padding: 0;
     display: inline-flex;
+    align-content: center;
+    align-items: center;
     width: 100%;
-    position: sticky;
-    top: 0;
 }
 
 .hora-programa{
     padding: 0;
     width: fit;
+    font-size: small;
 }
 
 .titulo-programa{
@@ -48,15 +54,15 @@
 }
 
 .autor-programa{
-    margin-top: 250px;
+    margin-top: 30%;
     width: fit-content;
-    max-width: 80%;
+    font-size: medium;
 }
 
 .abstract-programa{
     width: fit-content;
-    max-width: 80%;
-    margin: 30px 0;
+    margin: 10px 0;
+    font-size: medium;
 }
 
 .schedule-img{

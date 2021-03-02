@@ -5,10 +5,10 @@ var volume = 0.5;
 var options = {
   width: "100%",
   height: "100%",
-  channel: "Sacriel",
+  channel: "Hiko",
   autoplay: true,
   parent: ["aural-podcast.github.io"],
-  controls: false,
+  controls: true,
   muted: true,
 };
 

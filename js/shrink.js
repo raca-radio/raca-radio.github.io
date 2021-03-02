@@ -5,7 +5,7 @@ $(document).ready(function(){
       
       numItems = $('.programa').length;
       documentHeigth = $( document ).height();
-      height_items = documentHeigth * 0.90 / numItems;
+      height_items = documentHeigth/ numItems;
       height_programa = height_items + "px";
       console.log(height_items); 
       height_programa_open = "300px";
@@ -18,15 +18,16 @@ $(document).ready(function(){
   
     $('.programa').hover(function(){
         height_programa_open = $(this).width();
+        height_shrink_program = (documentHeigth - height_programa_open) / (numItems - 1)
+        $('.programa').not(this).css('height', height_shrink_program);
         $(this).css('height', height_programa_open);
         $(this).css('overflow', "auto");
-        lastElementTop = $('#parrilla .programa:last-child').position().top ;
-        scrollAmount = lastElementTop - 200 ;
-    
-        $('#parrilla').animate({scrollTop: scrollAmount},1000);
+        $(this).find(".autor-programa").css('margin-top', "10px");
+
     }, function() {
         $(this).css('height',height_programa);
+        $('.programa').not(this).css('height',height_programa);
         $(this).css('overflow', "hidden");
-        $(this).animate({scrollTop: '0px'}, 800);
+        $(this).find(".autor-programa").css('margin-top', "30%");
     });
   });
