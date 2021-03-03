@@ -93,7 +93,7 @@ h2{
   z-index: 3;
   overflow-y: hidden;
   border-top: 5px double rgb(255, 255, 255);
-  border-color: #888;
+  border-color: #1a1a1a;
   padding: 0 20px ;
 }
 
@@ -219,22 +219,28 @@ h2{
   align-items: center;
 }
 
+#info-empty{
+  width: 100%;
+  display: none;
+  height: 150px;
+  align-items: center;
+}
+
 .info-imagen{
   height: 100%;
   width: auto;
 }
 
-.empty-image{
-  border-color: white;
-  border-width: thin;
-  border-style: solid;
-  width: 15%;
-  padding-top: 15%;
-}
 
 .info-texto{
   height: 100%;
   font-size: small;
+}
+
+.empty-text{
+  color: #1a1a1a;
+  width: fit-content;
+  background-color: #1a1a1a;
 }
 
 .info-texto-descripcion{
