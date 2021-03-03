@@ -60,6 +60,24 @@ h2{
   font-size: medium;
 }
 
+.button{
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+}
+
 
 /* INFO ORGANIZADORES */
 
@@ -332,12 +350,14 @@ h2{
       .live{
         height: 55%;
       }
+
       .live-controls{
         padding-bottom: 8%;
       }
 
       .info{
         height: 30%;
+        padding-bottom: 10%;
       }
 
       .info-time{
@@ -347,6 +367,14 @@ h2{
         align-items: center;
       }
 
+      .schedule{
+        padding-bottom: 20%;
+      }
+
+      .chat{
+        padding-bottom: 20%;
+      }
+
       .logo-title{
         height: 70%;
         width: auto;
@@ -354,7 +382,8 @@ h2{
 
       .artist{
         height: 130%;
+        padding-bottom: 20%;
       }
 
-
+      
     }
