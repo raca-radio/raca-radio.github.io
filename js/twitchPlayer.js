@@ -8,7 +8,7 @@ var options = {
   channel: "Hiko",
   autoplay: true,
   parent: ["aural-podcast.github.io"],
-  controls: true,
+  controls: false,
   muted: true,
 };
 

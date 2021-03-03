@@ -34,14 +34,15 @@ body{
     padding: 0;
     display: inline-flex;
     align-content: center;
-    align-items: center;
     width: 100%;
+
 }
 
 .hora-programa{
     padding: 0;
     width: fit;
     font-size: small;
+    padding-left: 3px;
 }
 
 .titulo-programa{

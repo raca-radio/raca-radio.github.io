@@ -7,7 +7,6 @@ $(document).ready(function(){
       documentHeigth = $( document ).height();
       height_items = documentHeigth/ numItems;
       height_programa = height_items + "px";
-      console.log(height_items); 
       height_programa_open = "300px";
       
       for(var i=0;i<vNavimg.length;i++){

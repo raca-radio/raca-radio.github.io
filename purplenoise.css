@@ -57,7 +57,7 @@ h2{
 .schedule{
   grid-area: schedule;
   overflow-y: scroll;
-  font-size: small;
+  font-size: medium;
 }
 
 
@@ -80,7 +80,7 @@ h2{
 
 .about-info{
   grid-area: about-info;
-  font-size: small;
+  font-size: medium;
   position: relative;
   background-color: black;
 }
@@ -127,9 +127,10 @@ h2{
   grid-area: live;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 3fr 0.5fr;
   grid-template-areas:
     "live-video"
+    "live-controls"
     ;
   position: relative;
 }
@@ -143,7 +144,7 @@ h2{
 }
 
 #twitch{
-  height: 90%;
+  height: 80%;
   width: 100%;
   position: relative;
 }
@@ -154,7 +155,6 @@ h2{
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-top: 5%;
   padding-bottom: 20%;
 }
 
@@ -222,6 +222,14 @@ h2{
 .info-imagen{
   height: 100%;
   width: auto;
+}
+
+.empty-image{
+  border-color: white;
+  border-width: thin;
+  border-style: solid;
+  width: 15%;
+  padding-top: 15%;
 }
 
 .info-texto{
@@ -308,18 +316,38 @@ h2{
     /* For tablets: */
 
     .site{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-auto-rows: minmax(min-content, max-content);
-      grid-template-areas:
-        "title"
-        "live"
-        "info"
-        "chat"
-        "schedule"
-        "artist"
-        "about"
-        ;
+      display: block;
+      }
+
+      .title{
+        height: 10%;
+      }
+
+      .live{
+        height: 55%;
+      }
+      .live-controls{
+        padding-bottom: 8%;
+      }
+
+      .info{
+        height: 30%;
+      }
+
+      .info-time{
+        width: 100%;
+        display: none;
+        height: 150px;
+        align-items: center;
+      }
+
+      .logo-title{
+        height: 70%;
+        width: auto;
+      }
+
+      .artist{
+        height: 130%;
       }
 
 
