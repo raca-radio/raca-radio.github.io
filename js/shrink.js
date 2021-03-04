@@ -17,7 +17,7 @@ $(document).ready(function(){
   
     $('.programa').hover(function(){
         height_programa_open = $(this).width();
-        height_shrink_program = (documentHeigth - height_programa_open) / (numItems - 1)
+        height_shrink_program = (documentHeigth - height_programa_open) / (numItems - 1);
         $('.programa').not(this).css('height', height_shrink_program);
         $(this).css('height', height_programa_open);
         $(this).css('overflow', "auto");
