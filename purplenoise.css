@@ -74,8 +74,11 @@ h2{
 }
 
 .button:hover{
-  background-color: white;
+  background: rgb(250,225,36);
+  background: linear-gradient(90deg, rgba(250,225,36,1) 0%, rgba(253,29,29,1) 50%, rgba(154,87,156,1) 100%);
   color: black;
+  border-style: none;
+  border-radius: 20px;
 }
 
 
@@ -98,7 +101,7 @@ h2{
 
 .about-info{
   grid-area: about-info;
-  font-size: medium;
+  font-size: small;
   position: relative;
   background-color: black;
 }

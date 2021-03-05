@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    var height_programa = 0;
+
     window.onload = function() {
       var vNavimg = document.getElementsByClassName("programa");
       
