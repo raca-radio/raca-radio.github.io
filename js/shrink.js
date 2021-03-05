@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
-    var height_programa = 0;
-
-    window.onload = function() {
+    
       var vNavimg = document.getElementsByClassName("programa");
       
       numItems = $('.programa').length;
@@ -15,7 +13,6 @@ $(document).ready(function(){
         vNavimg[i].style.height = height_programa;
         vNavimg[i].style.overflow = "hidden";
       }
-    };
   
     $('.programa').hover(function(){
         height_programa_open = $(this).width();
