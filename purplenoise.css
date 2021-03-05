@@ -17,7 +17,7 @@ body{
 .site{
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.6fr 0.5fr;
-  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
   grid-template-areas:
     "title live chat artist"
     "schedule live chat artist"
@@ -29,7 +29,7 @@ body{
     position: relative;
 }
 
-.title, .schedule, .about-logo, .info-imagen, .info-texto {
+.title, .schedule, .info-imagen, .info-texto {
   padding: 20px;
   scrollbar-color: #888 #000000;
   scrollbar-width: 10px;
@@ -124,23 +124,14 @@ h2{
   justify-content: center;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0%;
 }
 
-.maca{
-  width: 20%; 
-  height: auto;
+.logo{
+  width: auto; 
+  height: 40px;
 }
-
-.noise{
-  width: 40%; 
-  height: auto;
-}
-
-.aural{
-  width: 40%; 
-  height: auto;
-}
-
 
 /* TWITCH Y CONTROLES */
 
@@ -386,6 +377,16 @@ h2{
       .artist{
         height: 130%;
         padding-bottom: 20%;
+      }
+
+      .about-logo{
+        display: inline-block;
+        padding: 5%;
+      }
+
+      .logo{
+        width: auto; 
+        height: 60px;
       }
 
       
