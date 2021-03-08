@@ -5,7 +5,7 @@ var volume = 0.5;
 var options = {
   width: "100%",
   height: "100%",
-  channel: "aural-podcast",
+  channel: "Aural_podcast",
   autoplay: true,
   parent: ["aural-podcast.github.io"],
   controls: true,
