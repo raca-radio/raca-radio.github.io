@@ -1,96 +1,231 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="gb18030">
-  <title>Aural</title>
+  <title>Purplenoise</title>
   <link rel="icon" type="image/ico" href="logos/icon.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="live.css">
+  <link rel="stylesheet" type="text/css" href="purplenoise.css">
 
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/6a8915fabb.js" crossorigin="anonymous"></script>
-
-  <script src="js/radioPlayer.js"></script>
-
-  <!--<style>
-
-  #myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-  }
+  <script src="https://kit.fontawesome.com/6a8915fabb.js" crossorigin="anonymous"></script>  
+  <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 
   
-  
-    </style>-->
+  <script src="js/infoTime.js"></script>
+
 
 </head>
 <body>
-<!--
-  <video autoplay muted loop id="myVideo">
-    <source src="video/sophie.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video> -->
 
   <div class="site">
 
 
-    <div class="title" style="mix-blend-mode: difference;">
-      <a href="https://aural-podcast.github.io"><img src="logos/aural8mlogo.png" sound="sonidos/hannah.mp3" alt="" width="100%" height="auto"></a>
+    <div class="title">
+      <img class="logo-title" src="logos/purplenoise.png" alt="logo purplenoise" sound="#">
 
-      <h2 sound="sonidos/hannah.mp3">La plataforma sonora experimental y Radio de la Escuela de Arquitectura de Madrid.</h2>
+      <h2 sound="#">aural x n01se </h2>
 
-      <a href="https://www.instagram.com/aural_podcast/?hl=es" sound="sonidos/hannah.mp3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="https://www.mixcloud.com/Aural_Podcast/" sound="sonidos/hannah.mp3" target="_blank"><i class="fab fa-mixcloud fa-2x"></i></a>
-      <br>
-      <br>
-      <div id="live"><div id="live1"></div><a id="live2" sound=" " href="https://aural-podcast.github.io">Live</a></div>
-      <a class="link2" href="http://aural.dpaetsam.com/archivo/" sound="sonidos/hannah.mp3">Archivo</a>
-      <br>
-      <a class="link2" href="http://aural.dpaetsam.com/descargas.html" sound="sonidos/hannah.mp3">Descargas</a>
-      <br>
-      <a class="link2" href="http://aural.dpaetsam.com/altText1.html" sound="sonidos/hannah.mp3">Alt Text</a>
-      <br>
-      <a sound="sonidos/hannah.mp3" href="https://www.aural.dpaetsam.com/maca5.html" class="link2">Evento  Radiof&oacute;nico MaCA 5</a>
-      <br>
-      <a sound="sonidos/hannah.mp3" href="https://www.aural.dpaetsam.com/dpalive.html" class="link2">DPA live 19</a>
-      <br>
-      <a sound="sonidos/hannah.mp3" href="https://www.aural.dpaetsam.com/opencall20.html" class="link2">OPEN CALL 20</a>
-      <br>
-
-      
       <!--
       -->
 
     </div>
 
 
-    <div class="live" style="mix-blend-mode: difference;" min-height="400px">
+    <div class="live" >
 
-      <iframe src="twitchPlayer.html" id="twitchPlayer" frameborder="0" scrolling="no"></iframe>
+      <div class="live-video">
+        <div id="twitch">
+        </div>
+      </div>
+      
+      <div class="live-controls">
 
-      <!--n01seglobal
-        aural_podcast
-
-        <div id="player">
-        <img src="logos/live.png" sound="sonidos/hannah.mp3" alt="" width="100%" height="auto" >
-        <i class="fas fa-play-circle fa-5x" id="play" onclick="play()"></i>
-        <i class="fas fa-pause-circle fa-5x" id="pause" onclick="pause()"></i>
       </div>
 
-      
-      <div id="volumeCONTROL">
+
+      <!--
+
+        <i class="fas fa-play-circle fa-2x" id="play" onclick="play()"></i>
+        <i class="fas fa-pause-circle fa-2x" id="pause" onclick="pause()"></i>
         <input type="range" id="volume" max="1" min="0" step="0.01" oninput="changevolume(this.value)" />
         <i id="volumeUP" class="fas fa-volume-up" onclick="mute()"></i>
         <i id="volumeDOWN" class="fas fa-volume-down" onclick="mute()"></i>
         <i id="volumeMUTE" class="fas fa-volume-mute" onclick="volumeup()"></i>
+      
+      -->
+    </div>
+
+
+    <div class="info">
+
+      <div id="info-empty">
+        <img class="info-imagen" src="img_noise/empty.png" alt="">
+        <div class="info-texto">
+          <p class="empty-text">20:00 - 21:00</p>
+          <h3 class="empty-text">CHLOEBB</h3>
+          <br>
+          <div class="info-texto-descripcion"><p class="empty-text">Café con Chloe es un programa matutino en el que descubriremos</p><br><p class="empty-text">Café con Chloe es un programa matutino en</p></div>
+        </div>
       </div>
 
 
-      <iframe src="https://player.twitch.tv/?channel=aural_podcast&parent=aural.eiei.page" frameborder="0" allowfullscreen="False" scrolling="no" height="350px" width="100%" ></iframe>
+
+
+
+
+
+        <div class="info-time" inicio="10:00" fin="10:45">
+          <img class="info-imagen" src="img_noise - cuadrado/lilith.jfif" alt="">
+          <div class="info-texto">
+            <p>10:00 - 10:45</p>
+            <h3>somos Lilith</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Recopilaci&oacute;n de discursos y reivindicaciones desde distintas miradas de mujeres referentes para empezar la jornada pre-8M.</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="10:45" fin="11:30">
+          <img class="info-imagen" src="img_noise - cuadrado/chloe.jpg" alt="">
+          <div class="info-texto">
+            <p>10:45 - 11:30</p>
+            <h3>chlo&eacute;.bb</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Caf&eacute; con Chloe es un programa matutino en el que descubriremos m&uacute;sica brasile&ntilde;a de la mano de Chloe. B&uacute;scala en ig c&oacute;mo @chloe_conh</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="13:30" fin="14:20">
+          <img class="info-imagen" src="img_noise - cuadrado/navxja.jpg" alt="">
+          <div class="info-texto">
+            <p>13:30 - 14:10</p>
+            <h3>NAVXJA</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Navxja es el proyecto musical de Nao (@navxja) que describe como &quot;musiquita tierna para corazones rotos&quot; y desde luego que cura heartbreaks. No te dejar&aacute; indiferente pues derrite hasta el frio polar s&oacute;lo con con una guitarra y su voz. Su arte se refleja no s&oacute;lo en las melod&iacute;as de tintes dulces, sino en toda su expresi&oacute;n art&iacute;stica y visual donde convergen sus raices afrocolombianas mezcladas con sus experiencias de una vida madrile&ntilde;a, y enamora. Artista firmada por Snap! Clap! su ritmo creativo es digno de admirar con 4 EPs a sus espaldas y un documental en camino.</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="14:10" fin="14:50">
+          <img class="info-imagen" src="img_noise - cuadrado/megane.jpg" alt="">
+          <div class="info-texto">
+            <p>14:10 - 14:50</p>
+            <h3>megane mercury</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Artista no binaria multidisciplinar, Megane (@meganemercury) es una m&aacute;quina creativa. Desde fotograf&iacute;a y v&iacute;deo hasta la m&uacute;sica, sin olvidar la moda, sus v&iacute;as creativas nunca se agotan. Referente de la escena drag de Madrid, Megane lucha por la visbilidad de la comunidad negra y LGBTQIA+ de la que se rodea para trabajar y dar voz. Todo un ejemplo a seguir.</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="14:50" fin="16:00">
+          <img class="info-imagen" src="img_noise - cuadrado/fresis.png" alt="">
+          <div class="info-texto">
+            <p>14:50 - 16:00</p>
+            <h3>freesismafia</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Han llegado para quedarse, las due&ntilde;as del hip hop en Madrid, las Free Sis traen todos los puntos de vista a golpe de rima. Toda una sororidad y ejemplo de colaboraci&oacute;n en femenino y es que cada una tiene su estilo pero si lo que quieres son quieres barras te van a poner entre rejas. S&iacute;guelas en ig @freesismafia</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="16:00" fin="16:30">
+          <img class="info-imagen" src="img_noise - cuadrado/hoe.jpg" alt="">
+          <div class="info-texto">
+            <p>16:00 - 16:30</p>
+            <h3>Putas Impresiones</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Una reflexi&oacute;n sobre las primeras impresiones, las apariencias y las ideas preconcebidas, cuestiona nuestra capacidad de juicio y prejuicio, de la valoracion ignorante como primera reaccion y de la confrontacion, pero sin hogueras. Sus autores son: @alvarodelrio_ y @spongesilvia</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="16:30" fin="17:00">
+          <img class="info-imagen" src="img_noise - cuadrado/1rapidito.jpg" alt="">
+          <div class="info-texto">
+            <p>16:30 - 17:00</p>
+            <h3>1 rapidito</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>Uno rapidito invitadxs es un programa radiof&oacute;nico de media hora de duraci&oacute;n a ojo de buen cubero. Lxs co-presentadorxs Mara jaqueMate (@beaklorea) y Javi puntodeNieves (@pelaeskines) escoger&aacute;n un tema de inter&eacute;s al rededor del cual habr&aacute; m&uacute;sica y tertulia. Traer&aacute;n varixs invitadxs que a colaci&oacute;n del tema tendr&aacute;n que elegir una canci&oacute;n y comentarla. Los temas escogidos por lxs anfitrionxs tocar&aacute;n pol&iacute;tica, religi&oacute;n, cultura popular, trascendencia y espiritualidad, y servir&aacute;n como catalizador para el crecimiento personal del radio-oyente. El objetivo es fichar por cadena cien pero de momento nos sirve con @aural_podcast. No te lo pierdas!</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="17:00" fin="17:30">
+          <img class="info-imagen" src="img_noise - cuadrado/karmen.jfif" alt="">
+          <div class="info-texto">
+            <p>17:00 - 17:30</p>
+            <h3>Bleeding in my st4r</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>programa musical dedicado a drain gang (bladee, ecco2k y thaiboy digital), sadboys (yung lean, gud, yung sherman) y otros &lt;3 narrado por @k4rm3n_rubi0</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="17:30" fin="18:00">
+          <img class="info-imagen" src="img_noise - cuadrado/musicaQueSale.jfif" alt="">
+          <div class="info-texto">
+            <p>17:30 - 18:00</p>
+            <h3>M&uacute;sica que sale m&aacute;s t&uacute;</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>musiquita que ha salido en el &uacute;ltimo mes comentada por your favourite local locutora @paula_saez. Edici&oacute;n especial mujeres</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="18:30" fin="19:20">
+          <img class="info-imagen" src="img_noise - cuadrado/raxet.jfif" alt="">
+          <div class="info-texto">
+            <p>18:30 - 19:20</p>
+            <h3>raxet1 + jvliana</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>raxet1 es una cantante y compositora de Madrid. Comienza su actividad creativa como raxet1 en 2016, s&iacute; bien antes como Albahacassette (su heter&oacute;nimo) ya ven&iacute;a componiendo bajo otra l&iacute;rica m&aacute;s formal. Canciones de guitarra y dobles voces con un contenido que tiene que ver con revelaciones sobre El Otro, el Amor, el Poder y otros intercambios.
+            </p>
+            <p>Jvliana es cantante y compositora asturiana. Sentimiento y un sonido brumoso. Voz verde oscuro. Durante a&ntilde;os compartiendo canciones propias y versiones en la jungla de SoundCloud (2015 - 2021). Actualmente trabajando en un &aacute;lbum-semilla folcl&oacute;rico, indie y muy propio</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="19:20" fin="20:00">
+          <img class="info-imagen" src="img_noise - cuadrado/meQuieres.jpg" alt="">
+          <div class="info-texto">
+            <p>19:20 - 20:00</p>
+            <h3>mequieres?</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>D&uacute;o formado por Irene Garry (@irenegarry) y Roc&iacute;o Llamazares (@rociollamazares), c&oacute;mo DJs amateurs estuvieron en nuestra primera fiesta N1GHT N01SE en Madrid y despu&eacute;s de un a&ntilde;o en activo vuelven a pinchar con nosotras. Desde entonces, Roc&iacute;o se ha estrenado en Twitch con TOMBOLO,un programa que promete traernos entrevistas muy interesantes desde su primer cap&iacute;tulo con Mar&iacute;a Blay e Irene fue seleccionada por @vibramahou en el concurso que lleva a artistas independientes nada m&aacute;s y nada menos que al Mad Cool.</p></div>
+          </div>
+        </div>
+
+        <div class="info-time" inicio="20:00" fin="20:30">
+          <img class="info-imagen" src="img_noise/landa.jfif" alt="">
+          <div class="info-texto">
+            <p>20:00 - 20:30</p>
+            <h3>LNDA</h3>
+            <br>
+            <div class="info-texto-descripcion"><p>LNDA es cofundadora de Escaparate 14/38. Nos trae una sesi&oacute;n de eclecticismo electr&oacute;nico, una reminiscencia del club desde casa. Otra manera de experimentar el club y la fiesta. Desde la distancia y la pausa.</p></div>
+          </div>
+        </div>
+
+
+      <!--
+
+      -->
+
+    </div>
+
+    
+    <div class="schedule">
+
+      
+      <p sound="sonidos/asmr1.mp3">
+        >> INFO
+        <br>
+        <br>
+        El evento solidario de las plataformas sonoras experimentales N01SE global y Aural por y para mujeres creativas y artistas independientes.
+        <br>
+        <br>
+        <br>
+        >> DONACIONES
+        <br>
+        <br>
+        Todo lo recaudado ir&aacute; destinado &iacute;ntegramente a la asociaci&oacute;n de mujeres y acci&oacute;n social situada en el mismo barrio de Carabanchel, Mujeres Opa&ntilde;el. (@mujeresopanel <a href="https://amo.org.es/">https://amo.org.es/</a>  ).
+      </p>
+      <div class="button" onclick="window.open('https://paypal.me/pools/c/8xmEdGQL5l','Donation');" style="cursor: pointer;">Dona aqu&iacute;!
+        </div>
+
+      <!--
       
        -->
 
@@ -98,61 +233,91 @@
 
 
     <div class="chat" >
-
       
-        
-      <script id="cid0020000263685131487" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%; height: 60%;">{"handle":"aurallive","arch":"js","styles":{"b":100,"c":"000000","d":"000000","l":"FFFFFF","m":"FFFFFF","p":"10","r":100,"t":0,"usricon":1.3,"surl":0,"allowpm":0,"fwtickm":1}}</script>
+      <iframe id="chat_embed" src="https://www.twitch.tv/embed/N01SEglobal/chat?parent=aural-n01se.github.io"> </iframe>
 
       <!--
-        <iframe
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/aural_podcast/chat?parent=aural.eiei.page"
-        height="60%"
-        width="100%">
-      </iframe>
+
       -->
     </div>
 
 
-    <div class="schedule" style="mix-blend-mode: difference;">
-
+    <div class="artist">
       
-
       <iframe id="parrilla" src="schedule.html"></iframe>
 
       <!--
 
-        <a href="https://forms.gle/JXGdbnukFbjvNNEE8"><img id="picture" src="img\aural2.png" onerror="myFunction()" style='height: 100%; width: 100%; object-fit: contain; max-height: 100%;' sound="sonidos/hannah.mp3"></a>
-
-      <iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FMadrid&amp;src=a2QwZW9sdjhrMmpiajlicnVhOTY0dXNzbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23000000&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=0&amp;showTitle=0&amp;mode=WEEK" style="border-width:0; -webkit-filter: grayscale(100%); filter: grayscale(100%) invert(100%) contrast(120%)" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
-
-      
-      <script type="text/javascript" src='js/picture.js'> </script>
       -->
-
     </div>
 
+    <div class="about">
+      <div class="about-info">
+        <div id="about-info-expand"> 
+          <br>
+          <p>>> ORGANIZACI&Oacute;N</p> 
+          <br>
+          <br>
+          <br>
+          <p sound="#">
+          Aural - Plataforma sonora experimental y radio de la Escuela T&eacute;cnica Superior de Arquitectura en UPM. @aural_podcast
+          <br> 
+          <br>
+          La Hipoteca - Espacio autogestionado y multidisciplinar. Gestionado por Marta Badiola. @lahipoteca
+          <br> 
+          <br>
+          N01se Global - Plataforma pluridisciplinar por y para artistas independientes. Comunidad en: @n01seglobal @n1ghtn01se @evilut10n
+          <br> 
+          <br>
+          Mujeres Opañel - ONG con acci&oacute;n social que ayuda mujeres en situaci&oacute;n de riesgo en Carabanchel. @mujeresopanel
+          <br> 
+          <br>
+          MACa - Master Universitario en Comunicaci&oacute;n Arquitect&oacute;nica de la ETSAM en la Universidad Polit&eacute;cnica de Madrid. @macaetsam
+          <br> 
+          <br>
+          Flor de Cuchillo - Estudio creativo formado por Mar&iacute;a Grau Piqu&eacute; y Mar&iacute;a Margo encuentra su trabajo en @flordecuchillo.estudio
+        </p>
+        </div>
+    
 
-    <div class="link" style="mix-blend-mode: difference;">
+        <!--
+        
+         -->
+  
+      </div>
 
-      <a href="https://maca.aq.upm.es/"><img src="logos/macaBlanco.png" sound="sonidos/aural.mp3" width="31%" height="auto"></a>
-      <a href="http://raca.aq.upm.es/"><img src="logos/racaBlanco.png" sound="sonidos/aural.mp3" width="64%" height="auto"></a>
+      <div class="about-logo">
+        
+
+        <img class="logo" src="logos/auralBlanco.png" alt="logo purplenoise" sound="#" onclick="window.open('https://www.instagram.com/aural_podcast/');" style="cursor: pointer;">
+        <img class="logo" src="logos/laHipotecaBlanco.png" alt="logo purplenoise" sound="#" onclick="window.open('https://www.espaciolahipoteca.com');" style="cursor: pointer;">
+        <img class="logo" src="logos/noiseNegro.png" alt="logo nightnoise" sound="#" onclick="window.open('https://www.instagram.com/n01seglobal/');" style="cursor: pointer;">
+        <img class="logo" src="logos/mujeresOpañelBlanco.png" alt="logo purplenoise" sound="#" onclick="window.open('https://www.amo.org.es');" style="cursor: pointer;">
+        <img class="logo" src="logos/macaBlanco.png" alt="logo maca" sound="#" onclick="window.open('https://www.instagram.com/macaetsam/');" style="cursor: pointer;">
+        <img class="logo" src="logos/florDeCuchilloBlanco.png" alt="logo purplenoise" sound="#" onclick="window.open('https://www.instagram.com/flordecuchillo.estudio/');" style="cursor: pointer;">
+
+        <!--
+        
+         -->
+  
+      </div>
 
       <!--
+      
+       -->
 
-      -->
     </div>
 
   </div>
 
-<audio id="audio"  src="https://node-17.zeno.fm/72f180hppd0uv?rj-ttl=5&amp;rj-tok=AAABdSf4ZkEAxwHOtml7y8peVw" ></audio>
 
       <!--
 
       -->
 </body>
 
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/expandAbout.js"></script>
+<script src="js/twitchPlayer.js"></script>
 
 
 </html>

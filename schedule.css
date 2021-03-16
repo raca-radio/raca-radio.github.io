@@ -54,10 +54,13 @@ body{
     width: 100%;
 }
 
+.autor-programa, .abstract-programa{
+  font-size: small;
+}
+
 .autor-programa{
     margin-top: 30%;
     width: fit-content;
-    font-size: medium;
     background-color: blue;
     text-decoration: underline;
 }
@@ -65,7 +68,6 @@ body{
 .abstract-programa{
     width: fit-content;
     margin: 10px 0;
-    font-size: medium;
 }
 
 .schedule-img{

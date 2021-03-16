@@ -40,7 +40,6 @@ body{
 
 .live{
   grid-area: live;
-  height: 80%;
 }
 
 #twitchPlayer{

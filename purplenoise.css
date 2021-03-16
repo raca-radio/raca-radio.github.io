@@ -130,7 +130,7 @@ h2{
 
 .logo{
   width: auto; 
-  height: 40px;
+  height: 35px;
 }
 
 /* TWITCH Y CONTROLES */
@@ -299,6 +299,11 @@ h2{
   /* hover scroll */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+
+  a{
+    background-color: blue;
+    color: white;
   }
 
 

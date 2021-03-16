@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".about").click(function () {
             if (open==0) {
                 $("#about-info-expand").stop(true, false).animate({
-                    height: "400px"
+                    height: "600px"
                 });
                 open = 1;
             } else {
@@ -33,7 +33,7 @@ $(document).ready(function() {
     } else { 
         $(".about").hover(function () {
             $("#about-info-expand").stop(true, false).animate({
-                height: "400px"
+                height: "600px"
             });
         }, function () {
             $("#about-info-expand").stop(true, false).animate({
