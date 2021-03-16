@@ -12,6 +12,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: large;
   margin: 0;
+  overflow: hidden;
 }
 
 .site{
