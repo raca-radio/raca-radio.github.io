@@ -5,9 +5,9 @@ var volume = 0.5;
 var options = {
   width: "100%",
   height: "100%",
-  channel: "N01SEglobal",
+  channel: "aural_podcast",
   autoplay: true,
-  parent: ["aural-n01se.github.io"],
+  parent: ["aural-podacst.github.io"],
   controls: true,
   muted: true,
 };

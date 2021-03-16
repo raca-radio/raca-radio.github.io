@@ -10,19 +10,18 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: large;
   margin: 0;
 }
 
 .site{
   display: grid;
-  grid-template-columns: 0.8fr 0.8fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 0.4fr;
+  grid-template-columns: 0.5fr 1fr 0.6fr 0.5fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
   grid-template-areas:
-    "title live chat schedule"
-    "title live chat schedule"
-    "title live chat schedule"
-    "title live chat link"
+    "title live chat artist"
+    "schedule live chat artist"
+    "about info chat artist"
     ;
 
     margin:0;
@@ -30,46 +29,242 @@ body{
     position: relative;
 }
 
-.title, .live, .schedule, .link {
+.title, .schedule, .info-imagen, .info-texto {
   padding: 20px;
+  scrollbar-color: #888 #000000;
+  scrollbar-width: 10px;
 }
+
+
+/* TITULO */
 
 .title{
   grid-area: title;
 }
 
-.live{
-  grid-area: live;
+.logo-title{
+  width: 100%; 
+  height: auto;
 }
 
-#twitchPlayer{
-  width: 100%;
-  height: 100%;
+h2{
+  font-size: x-large;
 }
 
-.chat{
-  grid-area: chat;
-  position: relative;
-  padding: 50px 8% ;
-}
+
+/* INFO CALENDARIO */
 
 .schedule{
   grid-area: schedule;
+  overflow-y: scroll;
+  font-size: large;
 }
 
-.link{
-  grid-area: link;
-  display: inline-block;
-  align-self: flex-end;
+.button{
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
-.pizarra{
-   position: absolute;
-   right: 4%;
-   bottom: 0;
-   min-width: 92%;
-   min-height: 100%;
-   z-index: -100;
+.button:hover{
+  background: rgb(250,225,36);
+  background: linear-gradient(90deg, rgba(250,225,36,1) 0%, rgba(253,29,29,1) 50%, rgba(154,87,156,1) 100%);
+  color: black;
+  border-style: none;
+  border-radius: 20px;
+}
+
+
+/* INFO ORGANIZADORES */
+
+.about{
+  grid-area: about;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "about-info"
+    "about-logo"
+    ;
+  position: relative;
+  
+  background-color: black;
+}
+
+.about-info{
+  grid-area: about-info;
+  font-size: large;
+  position: relative;
+  background-color: black;
+}
+
+#about-info-expand{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 3;
+  overflow-y: hidden;
+  border-top: 5px double rgb(255, 255, 255);
+  border-color: #1a1a1a;
+  padding: 0 20px ;
+}
+
+.about-logo{
+  grid-area: about-logo;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: auto; 
+  height: 100px;
+  padding: 0 2%;
+}
+
+/* TWITCH Y CONTROLES */
+
+.live{
+  grid-area: live;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 0.5fr;
+  grid-template-areas:
+    "live-video"
+    "live-controls"
+    ;
+  position: relative;
+}
+
+.live-video{
+  grid-area: live-video;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#twitch{
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.live-controls{
+  grid-area: live-controls;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 20%;
+}
+
+#play{
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+#pause{
+  display: none;
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+#volumeUP{
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volumeDOWN{
+  display: none;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volumeMUTE{
+  display: none;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+#volume{
+  width: 60%;
+  cursor: pointer; 
+
+}
+
+
+/* CHAT */
+
+.chat{
+  grid-area: chat;
+}
+
+#chat_embed{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+
+/* INFO ARTISTA + DONACIONES */
+
+.info{
+  grid-area: info;
+}
+
+.info-time{
+  width: 100%;
+  display: none;
+  height: 150px;
+  align-items: center;
+}
+
+#info-empty{
+  width: 100%;
+  display: none;
+  height: 150px;
+  align-items: center;
+}
+
+.info-imagen{
+  height: 100%;
+  width: auto;
+}
+
+
+.info-texto{
+  height: 100%;
+  font-size: small;
+}
+
+.empty-text{
+  color: #1a1a1a;
+  width: fit-content;
+  background-color: #1a1a1a;
+}
+
+.info-texto-descripcion{
+  height: 50%;
+  overflow-y: scroll;
+}
+
+
+/* INFO GENERAL ARTISTAS */
+
+.artist{
+  grid-area: artist;
 }
 
 #parrilla{
@@ -79,201 +274,36 @@ body{
 }
 
 
-h1, h2, p, img, a{
-  transition: all 0.3s ease-out;
-}
+/* ATRIBUTOS GENERALES */
 
-h6 {
-  margin: 0;
-}
+  p{
+    margin: 0;
+    padding: 0;
+  }
 
-
-
-#audio{
-  width: 100%;
-  filter:invert(100%) contrast(110%);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  mix-blend-mode: difference;
-}
-
-#player{
-  position: relative
-}
-
-#play{
-  display: block;
-  opacity: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-#pause{
-  display: none;
-  opacity: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer; 
-}
-
-#volumeCONTROL{
-  display: block;
-  position: relative;
-  padding: 5%;
-  width: 100%;
-}
-
-#volumeUP{
-  display: inline;
-  margin: 0 2%;
-  cursor: pointer; 
-}
-
-#volumeDOWN{
-  display: none;
-  margin: 0 2%;
-  cursor: pointer; 
-}
-
-#volumeMUTE{
-  display: none;
-  margin: 0 2%;
-  cursor: pointer; 
-}
-
-#volume{
-  width: 80%;
-  cursor: pointer; 
-}
-
-#mydiv {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  width: 200px;
-  height: auto;
-  z-index: 9;
-  background-color: black;
-  border: 1px solid white;
-  padding: 10px;
-  display: none;
-}
-
-#mydivheader {
-  cursor: move;
-  z-index: 10;
-  background-color: white;
-  color: black;
-  margin: -35px -10px -10px -10px;
-  text-align: right;
-}
-
-h1, h2{
-  font-family: 'Raleway', sans-serif;
-}
-
-p{
-  font-size: 18px;
-}
-
-a{
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
-
-#close{
-  color: black;
-}
-
-.info{
-  margin: 0;
-}
-
-#live1 {
-  width: 13px;
-  height: 13px;
-  -webkit-animation-name: live1; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-  animation-name: live1;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  border-radius: 50px;
-  display: inline-block;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes live1 {
-  0%   {background-color:white;}
-  50%  {background-color:red;}
-  100% {background-color:white;}
-}
-
-/* Standard syntax */
-@keyframes live1 {
-  0%   {background-color:white;}
-  50%  {background-color:red;}
-  100% {background-color:white;}
-}
-
-#live2 {
-  width: 10px;
-  height: 10px;
-  -webkit-animation-name: live2; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-  animation-name: live2;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  display: inline;
-  text-decoration: none;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes live2 {
-  0%   {color:white;}
-  50%  {color:red;}
-  100% {color:white;}
-}
-
-/* Standard syntax */
-@keyframes live2 {
-  0%   {color:white;}
-  50%  {color:red;}
-  100% {color:white;}
-}
-
-
-  /* width */
+  /* tamaño scroll */
   ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
+  /* scroll fondo */
   ::-webkit-scrollbar-track {
     background: #000000; 
   }
    
-  /* Handle */
+  /* scroll activo */
   ::-webkit-scrollbar-thumb {
     background: #888; 
   }
   
-  /* Handle on hover */
+  /* hover scroll */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+
+  a{
+    background-color: blue;
+    color: white;
   }
 
 
@@ -283,30 +313,25 @@ a{
   .site{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content(100%);
+    grid-auto-rows: minmax(min-content, max-content);
     grid-template-areas:
       "title chat"
       "live chat"
-      "schedule link"
+      "info info"
+      "schedule schedule"
+      "artist artist"
+      "about about"
       ;
     }
 
-    .live, #twitchPlayer{
-        width: 100%;
-        height: 700px;
-      }
-
-    .pizarra{
-       height: 100%;
+    .chat{
+      height: 500px;
     }
 
-    .schedule{
-        height: 100%;
+    .live{
+      height: 400px;
     }
 
-    #audio{
-      padding-bottom: 50px;
-    }
 
   }
 
@@ -314,33 +339,60 @@ a{
     /* For tablets: */
 
     .site{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: fit-content(100%);
-      grid-template-areas:
-        "title"
-        "live"
-        "chat"
-        "schedule"
-        "link"
-        ;
+      display: block;
       }
 
-      .live, #twitchPlayer{
+      .title{
+        height: 10%;
+      }
+
+      .live{
+        height: 55%;
+      }
+
+      .live-controls{
+        padding-bottom: 8%;
+      }
+
+      .info{
+        height: 30%;
+        padding-bottom: 10%;
+      }
+
+      .info-time{
         width: 100%;
-        height: 700px;
+        display: none;
+        height: 150px;
+        align-items: center;
+      }
+
+      .schedule{
+        padding-bottom: 20%;
       }
 
       .chat{
-        height: 0;
+        padding-bottom: 20%;
       }
+
+      .logo-title{
+        height: 70%;
+        width: auto;
+      }
+
+      .artist{
+        height: 130%;
+        padding-bottom: 20%;
+      }
+
+      .about-logo{
+        display: inline-block;
+        padding: 5%;
+      }
+
+      .logo{
+        width: auto; 
+        height: 60px;
+      }
+
       
-      #parrilla{
-        height: 800px;
-      }
-
-    .schedule{
-        height: 100%;
-    }
-
     }
