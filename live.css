@@ -332,6 +332,11 @@ h2{
       height: 400px;
     }
 
+    h2{
+      font-size: medium;
+    }
+    
+
 
   }
 
@@ -370,8 +375,7 @@ h2{
         padding-bottom: 20%;
       }
 
-      .chat{
-        padding-bottom: 20%;
+      .chat{height: 0;
       }
 
       .logo-title{
