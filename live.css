@@ -32,7 +32,7 @@ body{
 
 .title, .schedule, .info-imagen, .info-texto {
   padding: 20px;
-  scrollbar-color: #888 #000000;
+  scrollbar-color: #888 #fee123;
   scrollbar-width: 10px;
 }
 
@@ -97,21 +97,21 @@ h2{
     ;
   position: relative;
   
-  background-color: black;
+  background-color: #fee123;
 }
 
 .about-info{
   grid-area: about-info;
   font-size: large;
   position: relative;
-  background-color: black;
+  background-color: #fee123;
 }
 
 #about-info-expand{
   position: absolute;
   bottom: 0;
   height: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #fee123;
   z-index: 3;
   overflow-y: hidden;
   border-top: 5px double rgb(255, 255, 255);
@@ -140,10 +140,9 @@ h2{
   grid-area: live;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr 0.5fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "live-video"
-    "live-controls"
     ;
   position: relative;
 }
@@ -157,7 +156,7 @@ h2{
 }
 
 #twitch{
-  height: 80%;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -289,7 +288,7 @@ h2{
   
   /* scroll fondo */
   ::-webkit-scrollbar-track {
-    background: #000000; 
+    background: #fee123; 
   }
    
   /* scroll activo */
@@ -303,8 +302,7 @@ h2{
   }
 
   a{
-    background-color: blue;
-    color: white;
+    color: black;
   }
 
 
@@ -344,6 +342,10 @@ h2{
   @media only screen and (max-width:900px) {
     /* For tablets: */
 
+    body{
+      overflow: scroll;
+    }
+
     .site{
       display: block;
       }
@@ -380,7 +382,7 @@ h2{
       }
 
       .logo-title{
-        height: 70%;
+        height: 100%;
         width: auto;
       }
 

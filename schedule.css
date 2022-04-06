@@ -27,7 +27,7 @@ body{
 }
 
 .programa-header, .autor-programa, .abstract-programa{
-  background-color: black;
+  background-color: #fee123;
 }
 
 .programa-header{
@@ -61,7 +61,7 @@ body{
 .autor-programa{
     margin-top: 30%;
     width: fit-content;
-    background-color: blue;
+    background-color: #fee123;
     text-decoration: underline;
 }
 
