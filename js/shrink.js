@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
+  
+
     
       var vNavimg = document.getElementsByClassName("programa");
+      console.log(vNavimg);
       
       numItems = $('.programa').length;
       documentHeigth = $( document ).height();

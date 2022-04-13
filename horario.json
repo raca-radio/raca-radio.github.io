@@ -1,0 +1,39 @@
+[
+
+
+    {
+        "nombre_programa":"nombre de programa 1", 
+        "autorxs" : [
+            
+            {"nombre": "@maca",
+            "link": "#"},
+
+            {"nombre": "@maca",
+            "link": "#"}
+            
+        ],
+        "hora_de_inicio":"17:40", 
+        "hora_de_fin":"17:50",
+        "descripción":"..."
+    },
+
+
+
+    {
+        "nombre_programa":"nombre de programa 2", 
+        "autorxs" : [
+            
+            {"nombre": "@maca",
+            "link": "#"},
+
+            {"nombre": "@maca",
+            "link": "#"}
+            
+        ],
+        "hora_de_inicio":"17:40", 
+        "hora_de_fin":"17:50",
+        "descripción":"..."
+    }
+
+
+]
