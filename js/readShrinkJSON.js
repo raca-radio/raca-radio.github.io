@@ -4,12 +4,18 @@ $(document).ready(function(){
         $.each(programas, function(index, programa) {
             let html;
 
-            console.log(programa)
-
             let url_image = "'imagenes/" + programa.nombre_imagen + "'";
-            let url_link = "'https://www.instagram.com/vdeviguetah/'";
 
-            html = '<div class="programa" style="background-image: url(' + url_image + '); background-size: 100%;"><div class="programa-header"><p class="hora-programa">' + programa.hora_de_inicio + ' - ' + programa.hora_de_fin + '</p><p class="titulo-programa">' + programa.nombre_programa + '</p></div><div class="programa-body"><p class="autor-programa" onclick="window.open(' + url_link + ');" style="cursor: pointer;">@vdeviguetah</p><p class="abstract-programa">' + programa.descripcion + '</p></div></div>';
+            let url_link ="";
+
+            $.each( programa.autorxs, function( key, value ) {
+                url_link += '<p class="autor-programa" onclick="window.open(';
+                url_link += "'" + value.link + "'";
+                url_link += ');" style="cursor: pointer;">';
+                url_link += value.nombre + "</p>";
+            });
+
+            html = '<div class="programa" style="background-image: url(' + url_image + '); background-size: 100%;"><div class="programa-header"><p class="hora-programa">' + programa.hora_de_inicio + ' - ' + programa.hora_de_fin + '</p><p class="titulo-programa">' + programa.nombre_programa + '</p></div><div class="programa-body">' + url_link + '<p class="abstract-programa">' + programa.descripcion + '</p></div></div>';
 
             $('#parrilla').append(html);
         });     
@@ -18,7 +24,6 @@ $(document).ready(function(){
 
 
         var vNavimg = document.getElementsByClassName("programa");
-        console.log(vNavimg);
         
         numItems = $('.programa').length;
         documentHeigth = $( document ).height();
