@@ -7,7 +7,7 @@ var options = {
   height: "70%",
   channel: "racaradio",
   autoplay: true,
-  parent: ["raca-radio.github.io"],
+  parent: ["racaradio.github.io"],
   controls: true,
   muted: true,
 };
