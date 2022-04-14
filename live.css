@@ -233,14 +233,16 @@ h2{
 
 #info-empty{
   width: 100%;
-  display: none;
+  display: inline-flex;
   height: 150px;
   align-items: center;
 }
 
 .info-imagen{
-  height: 100%;
-  width: auto;
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  margin: 40px;
 }
 
 

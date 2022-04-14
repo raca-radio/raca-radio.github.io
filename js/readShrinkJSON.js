@@ -50,9 +50,12 @@ $(document).ready(function(){
             $(this).css('overflow', "hidden");
             $(this).find(".autor-programa").css('margin-top', "30%");
         });
-    })
-    .fail(function() { $('#parrilla').append("error al leer el JSON. Comprueba las comas"); });
+    }).fail(function(jqXHR, textStatus, errorThrown) { 
+        $('#parrilla').append("error al leer el horario. Comprueba las comas <br> <br>" + errorThrown);
+    });
     
+
+
 });
 
 
