@@ -129,8 +129,8 @@ h2{
 }
 
 .logo{
-  width: auto; 
-  height: 100px;
+  width: 100%; 
+  height: auto;
   padding: 0 2%;
 }
 
@@ -233,16 +233,12 @@ h2{
 
 #info-empty{
   width: 100%;
-  display: inline-flex;
-  height: 150px;
-  align-items: center;
+  height: 100%;
 }
 
 .info-imagen{
-  height: 100px;
-  width: 100px;
-  min-width: 100px;
-  margin: 40px;
+  height: 80%;
+  width: 70%;
 }
 
 
@@ -399,8 +395,8 @@ h2{
       }
 
       .logo{
-        width: auto; 
-        height: 60px;
+        width: 100%; 
+        height: auto;
       }
 
       

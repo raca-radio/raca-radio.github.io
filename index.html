@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="live.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap5.css">
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,6 +14,7 @@
   <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 
   <script src="js/readInfoTimeJSON.js"></script>
+  <script src="js/insertHTML.js"></script>
 
 </head>
 <body>
@@ -22,45 +24,6 @@
     <!-- TITULO -->
     <div class="title">
       <img class="logo-title" src="logos/racaNegro.png" alt="logo raca">
-      <h2>La radio en directo del maca</h2> 
-    </div>
-
-    <!-- LINKS A WEBS -->
-    <div class="schedule">
-      <a href="http://raca.aq.upm.es/" target="_blank"><i class="fa-solid fa-play fa-2x"></i></a>
-      <a href="https://www.instagram.com/racaradio/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-      <a href="https://www.mixcloud.com/RACARADIO/" target="_blank"><i class="fa-brands fa-mixcloud fa-2x"></i></a>
-      <br>
-      <br>
-    </div>
-
-        
-    <!-- CREDITOS -->
-    <div class="about">
-      <div class="about-info">
-        <div id="about-info-expand"> 
-          <br>
-          <p>>> ABOUT</p> 
-          <br>
-          <br>
-          <br>
-          <p>RACa - @racaradio</p>
-          <br> 
-          <br>
-          <p>Aural - Plataforma sonora experimental del MACa. @aural_podcast</p>
-          <br> 
-          <br>
-          <p>MACa - Master Universitario en Comunicaci&oacute;n Arquitect&oacute;nica de la ETSAM en la Universidad Polit&eacute;cnica de Madrid. @macaetsam</p>
-          <br> 
-          <br>
-        </div>
-      </div>
-
-      <div class="about-logo">
-        <img class="logo" src="logos/auralNegro.png" alt="logo" sound="#" onclick="window.open('https://aural-podcast.github.io/');" style="cursor: pointer;">
-        <img class="logo" src="logos/macaNegro.png" alt="logo maca" sound="#" onclick="window.open('https://www.instagram.com/macaetsam/');" style="cursor: pointer;">
-      </div>
-
     </div>
 
     
@@ -73,13 +36,14 @@
       </div>
     </div>
 
+
     
     <!-- INFORMACIÓN PROGRAMA ACTUAL: NO TOCAR!!! -->
     <div class="info">
-      <div id="info-empty">
-        <div id="info-img" class="info-imagen" style="background-color: #1a1a1a; background-size: 100%;"></div>
+      <div id="info-empty" class="row d-flex align-items-center justify-content-center ps-5">
+        <div id="info-img" class="info-imagen col-3  gx-5" style="background-color: #1a1a1a; background-size: 100%;"></div>
         
-        <div class="info-texto">
+        <div class="info-texto col  gx-5">
           <p id="info-hora" class="empty-text">00:00 - 00:00</p>
           <h3 id="info-titulo" class="empty-text">CCCCCC</h3>
           <br>
@@ -87,7 +51,6 @@
         </div>
       </div>
     </div>
-
 
     
     <!-- CHAT: NO TOCAR!!! -->
@@ -102,7 +65,32 @@
       <iframe id="parrilla" src="schedule.html"></iframe>
     </div>
 
-    
+
+
+    <!-- DESCRIPCIÓN y LINKS -->
+    <div id="descripcion" class="schedule">
+      
+      
+
+    </div>
+
+        
+    <!-- CREDITOS -->
+    <div class="about">
+      <div class="about-info">
+        <div id="about-info-expand"> 
+          
+        </div>
+      </div>
+
+      <div class="about-logo">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col"><img class="logo" src="logos/auralNegro.png" alt="logo" sound="#" onclick="window.open('https://aural-podcast.github.io/');" style="cursor: pointer;"></div>
+            <div class="col"><img class="logo" src="logos/macaNegro.png" alt="logo maca" sound="#" onclick="window.open('https://www.instagram.com/macaetsam/');" style="cursor: pointer;"></div>
+          </div>
+      </div>
+
+    </div>
 
   </div>
   
