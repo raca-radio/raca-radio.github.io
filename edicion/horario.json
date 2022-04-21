@@ -16,6 +16,23 @@
     },
 
 
+
+
+    {
+        "nombre_programa":"1rapidito", 
+        "autorxs" : [
+            
+            {"nombre": "1rapidito",
+            "link": "#"}
+            
+        ],
+        "hora_de_inicio":"15:00", 
+        "hora_de_fin":"15:54",
+        "descripcion":"1rapidito",
+        "nombre_imagen": "1rapidito.jpg"
+    },
+
+
     
     
     {
@@ -29,8 +46,8 @@
             "link": "https://www.instagram.com/escuelitantiracistacol/"}
             
         ],
-        "hora_de_inicio":"01:52", 
-        "hora_de_fin":"04:05",
+        "hora_de_inicio":"15:55", 
+        "hora_de_fin":"18:00",
         "descripcion":"Medica con enfoque afrocentrado. Hago parte de la escuelita antiracista, espacio de formación en intervención de prácticas, discursos y comportamientos racistas en el contexto Colombiano.",
         "nombre_imagen": "laura.jpeg"
     },
@@ -125,7 +142,7 @@
         "hora_de_inicio":"19:10", 
         "hora_de_fin":"19:20",
         "descripcion":"Aspirantes.org es una organización sin animo de lucro con alto impacto y transformación social con trayectoria de 10 años, en donde por medio de la formación académica y de habilidades blandas brindamos la oportunidad de acceder al sistema de educación superior en Colombia, hemos logrado transformar la vida de más de 1.300 beneficiarios, quienes están en proceso de formación o son hoy en día profesionales. <br>  <br> Somos voluntarios, soñadores, visionarios y pensantes, eso somos Aspirantes. Creemos en la educación como una oportunidad de calidad, transformación y creación de paz..",
-        "nombre_imagen": "andres.jpeg"
+        "nombre_imagen": "perro.jpg"
     },
 
 
@@ -173,7 +190,11 @@
         "autorxs" : [
             
             {"nombre": "PAULA",
-            "link": "https://www.instagram.com/saez_paula/"}
+            "link": "https://www.instagram.com/saez_paula/"},
+
+            
+            {"nombre": "PAULA",
+                "link": "https://www.instagram.com/saez_paula/"}
             
         ],
         "hora_de_inicio":"20:00", 
@@ -204,21 +225,21 @@
     },
 
 
-
-    
-    
     {
-        "nombre_programa":"Eazy FX", 
+        "nombre_programa":"PISCIS RESPONDE", 
         "autorxs" : [
             
-            {"nombre": "@loose_your_life",
-            "link": "https://www.instagram.com/loose_your_life/"}
+            {"nombre": "@marinairurzun",
+            "link": "https://www.instagram.com/marinairurzun/"},
+
+            {"nombre": "@irenenoesta",
+                "link": "https://www.instagram.com/irenenoesta/"}
             
         ],
-        "hora_de_inicio":"22:00", 
-        "hora_de_fin":"23:00",
-        "descripcion":"Dj Set",
-        "nombre_imagen": "bear.jpg"
+        "hora_de_inicio":"21:00", 
+        "hora_de_fin":"22:00",
+        "descripcion":"especial PIScis season",
+        "nombre_imagen": "piscisResponde3.jpg"
     }
 
 
