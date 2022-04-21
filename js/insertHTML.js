@@ -8,6 +8,10 @@ $(document).ready(function(){
         $("#about-info-expand").load("edicion/about.html"); 
     });
     
+    $(function(){
+        $("#header").load("edicion/header.html"); 
+    });
+    
 });
 
 
