@@ -1,0 +1,225 @@
+[
+
+
+    {
+        "nombre_programa":"1rapidito", 
+        "autorxs" : [
+            
+            {"nombre": "1rapidito",
+            "link": "#"}
+            
+        ],
+        "hora_de_inicio":"12:40", 
+        "hora_de_fin":"14:52",
+        "descripcion":"1rapidito",
+        "nombre_imagen": "1rapidito.jpg"
+    },
+
+
+    
+    
+    {
+        "nombre_programa":"Laura Asprilla - Escuelita antiracista", 
+        "autorxs" : [
+            
+            {"nombre": "@lauraxpri",
+            "link": "https://www.instagram.com/lauraxpri/"},
+
+            {"nombre": "@escuelitantiracistacol",
+            "link": "https://www.instagram.com/escuelitantiracistacol/"}
+            
+        ],
+        "hora_de_inicio":"01:52", 
+        "hora_de_fin":"04:05",
+        "descripcion":"Medica con enfoque afrocentrado. Hago parte de la escuelita antiracista, espacio de formación en intervención de prácticas, discursos y comportamientos racistas en el contexto Colombiano.",
+        "nombre_imagen": "laura.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Isabel Pinyol Mediano", 
+        "autorxs" : [
+            
+            {"nombre": "@isabelpinyolm",
+            "link": "#"}
+            
+        ],
+        "hora_de_inicio":"18:10", 
+        "hora_de_fin":"18:20",
+        "descripcion":"Nuestra educación parte del espacio y de nuestra percepción del entorno: me interesa plantear hasta qué punto llega este condicionamiento.",
+        "nombre_imagen": "isabel.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Belén Fe", 
+        "autorxs" : [
+            
+            {"nombre": "@belenwu",
+            "link": "https://www.instagram.com/Belenwu/"}
+            
+        ],
+        "hora_de_inicio":"18:25", 
+        "hora_de_fin":"18:35",
+        "descripcion":"Hola, soy Belén, llevo seis añitos estudiando arquitectura, y otros tanto estudiando otras cosas. Pero la verdad que lo que me gusta es dar volteretas, bailar (just dance, it's gonna be okay) y coger margaritas en el campo, equisde. If you like me, swipe right",
+        "nombre_imagen": "belen.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Alberto Nanclares", 
+        "autorxs" : [
+            
+            {"nombre": "@espaciospublicosinformales",
+            "link": "https://www.instagram.com/espaciospublicosinformales/"}
+            
+        ],
+        "hora_de_inicio":"18:40", 
+        "hora_de_fin":"18:50",
+        "descripcion":"Alberto nanclares hace de todo, y todo lo hace mal",
+        "nombre_imagen": "nanclares.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Fetsac", 
+        "autorxs" : [
+            
+            {"nombre": "@FETSAC",
+            "link": "https://www.instagram.com/FETSAC/"}
+            
+        ],
+        "hora_de_inicio":"18:55", 
+        "hora_de_fin":"19:05",
+        "descripcion":"Hey, qué pasa chavales? <br>  <br> Somos la FETSAC, Festival de la Escuela Técnica Superior de Arquitectura de A Coruña. Colectivo formado por estudiantes. Desde hace ya 12 años, organizamos anualmente una semana cultural. Tratamos de abordar la arquitectura desde un punto de vista crítico y desligado del academicismo a través de ponencias y talleres de profesionales especializados en diferentes áreas, pero manteniendo siempre la conexión con la arquitectura. <br>  <br> Cada año reflexionamos en torno a un tema distinto, este año la máxima será Operación Salida. Tratamos de investigar los límites de la Arquitectura. Buscamos arquitectas que trabajen en lo que, a priori, no se considera como tal.",
+        "nombre_imagen": "fetsac.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Andrés Manrique - Aspirantes.org", 
+        "autorxs" : [
+            
+            {"nombre": "aspirantes.org",
+            "link": "https://www.aspirantes.org/"},
+
+            {"nombre": "@andrsmanrique",
+                "link": "https://www.instagram.com/andrsmanrique/"}
+            
+        ],
+        "hora_de_inicio":"19:10", 
+        "hora_de_fin":"19:20",
+        "descripcion":"Aspirantes.org es una organización sin animo de lucro con alto impacto y transformación social con trayectoria de 10 años, en donde por medio de la formación académica y de habilidades blandas brindamos la oportunidad de acceder al sistema de educación superior en Colombia, hemos logrado transformar la vida de más de 1.300 beneficiarios, quienes están en proceso de formación o son hoy en día profesionales. <br>  <br> Somos voluntarios, soñadores, visionarios y pensantes, eso somos Aspirantes. Creemos en la educación como una oportunidad de calidad, transformación y creación de paz..",
+        "nombre_imagen": "andres.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Antonio Huertas", 
+        "autorxs" : [
+            
+            {"nombre": "@el_chico",
+            "link": "https://www.instagram.com/el_chico/"}
+            
+        ],
+        "hora_de_inicio":"19:25", 
+        "hora_de_fin":"19:35",
+        "descripcion":"Antonio Huerta (n. 1994) es un arquitecto, fotógrafo, dibujador, y profesor estadounidense que reside en madrid hace 2 años. Rechazando la práctica tradicional de arquitectura en Nueva York, ha venido a Madrid a buscar un nuevo estilo de vida como profesor de inglés en un instituto público en Vallecas. Aborda como principal perspectiva la inclusión y justicia social como base de su filosofía docente. Cree que no se puede aprender inglés ni desarrollar la capacidad de pensamiento crítico leyendo de un libro, haciendo ejercicios de gramática, ni haciendo exámenes, en lugar de esto incorpora producciones culturales, charlas, y actividades interactivas como base fundamental para plantear una perspectiva interseccional y expandir su visión de un mundo inclusivo, socialmente justo, y que celebra la diversidad.",
+        "nombre_imagen": "antonio.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Victoria Acebo", 
+        "autorxs" : [
+            
+            {"nombre": "@victoria_acebo",
+            "link": "https://www.instagram.com/victoria_acebo/"}
+            
+        ],
+        "hora_de_inicio":"19:40", 
+        "hora_de_fin":"19:50",
+        "descripcion":"Victoria Acebo García es arquitecta por la ETSAM, 1995. Profesora asociada al DPA desde 2011 y profesora de proyectos de grado y master de la Escuela de Arquitectura, Ingeniería y Diseño de la Universidad Europea de Madrid desde el 2003. Ha dirigido, entre otros, el Taller de Verano de la XI Bienal Española de Arquitectura y Urbanismo —BEAU—, ha sido miembro del jurado de la X y VIII BEAU, de Europan 12 o del 1º Concurso de Ideas en la Red de la VI Bienal Iberoamericana de Arquitectura.",
+        "nombre_imagen": "victoria.jpeg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"mqsmqt: ESPECIAL GRAMMYS", 
+        "autorxs" : [
+            
+            {"nombre": "PAULA",
+            "link": "https://www.instagram.com/saez_paula/"}
+            
+        ],
+        "hora_de_inicio":"20:00", 
+        "hora_de_fin":"21:00",
+        "descripcion":"comentada de looks, ganadorxs y actuaciones",
+        "nombre_imagen": "paula.png"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"PISCIS RESPONDE", 
+        "autorxs" : [
+            
+            {"nombre": "@marinairurzun",
+            "link": "https://www.instagram.com/marinairurzun/"},
+
+            {"nombre": "@irenenoesta",
+                "link": "https://www.instagram.com/irenenoesta/"}
+            
+        ],
+        "hora_de_inicio":"21:00", 
+        "hora_de_fin":"22:00",
+        "descripcion":"especial PIScis season",
+        "nombre_imagen": "piscisResponde3.jpg"
+    },
+
+
+
+    
+    
+    {
+        "nombre_programa":"Eazy FX", 
+        "autorxs" : [
+            
+            {"nombre": "@loose_your_life",
+            "link": "https://www.instagram.com/loose_your_life/"}
+            
+        ],
+        "hora_de_inicio":"22:00", 
+        "hora_de_fin":"23:00",
+        "descripcion":"Dj Set",
+        "nombre_imagen": "bear.jpg"
+    }
+
+
+]
